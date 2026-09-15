@@ -1,0 +1,375 @@
+/*
+  Cedar & Stone Home Services — Week 5 Starter
+  Build with a System: Bootstrap
+
+  PROFESSIONAL WORKFLOW
+  Identify Requirement → Find Bootstrap Pattern → Implement → Adapt → Test
+
+  Bootstrap should do most of the layout and common interface work.
+  Before adding custom CSS, ask whether Bootstrap already provides an
+  appropriate utility or component pattern.
+
+  Use this file only for limited CLIENT-SPECIFIC styling that Bootstrap
+  does not reasonably provide.
+
+  Brand direction:
+  Deep green: #203c35
+  Cedar:      #a86643
+  Warm cream: #f5f0e7
+  Soft green: #e8efeb
+  Charcoal:   #26312d
+  Muted text: #5d6a64
+
+  Avoid rebuilding Bootstrap's grid, cards, buttons, spacing system,
+  responsive utilities, or other framework behavior here.
+
+  If you find yourself writing large overrides or repeated !important
+  declarations, reconsider your Bootstrap structure/classes first.
+*/
+
+:root {
+  --deep-green: #203c35;
+  --cedar: #a86643;
+  --warm-cream: #f5f0e7;
+  --soft-green: #e8efeb;
+  --charcoal: #26312d;
+  --muted-text: #5d6a64;
+}
+
+body {
+  background-color: var(--warm-cream);
+  color: var(--charcoal);
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+section {
+  overflow: hidden;
+}
+p {
+  font-size: 1rem;
+}
+.site-navbar {
+  background-color: var(--deep-green);
+  min-height: 85px;
+}
+.navbar-brand {
+  color: var(--warm-cream);
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+.navbar-brand:hover {
+  color: var(--warm-cream);
+}
+.navbar-nav .nav-link {
+  color: var(--cedar);
+  margin-left: 1rem;
+  font-size: 1rem;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--cedar);
+}
+.navbar-toggler {
+  border-color: var(--soft-green);
+}
+.navbar-toggler-icon {
+  filter: none;
+}
+.btn-contact {
+  background-color: var(--cedar);
+  color: var(--warm-cream);
+  border: 2px solid var(--cedar);
+  padding: 0.65rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 700;
+}
+.btn-contact:hover {
+  background-color: var(--deep-green);
+  border-color: var(--warm-cream);
+  color: var(--warm-cream);
+}
+.hero-section {
+  background-color: var(--warm-cream);
+  padding: 80px 0;
+}
+.section-label {
+  color: var(--cedar);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+}
+.hero-title {
+  color: var(--deep-green);
+  font-size: clamp(2.4rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+.hero-text {
+  color: var(--muted-text);
+  font-size: 1.1rem;
+  max-width: 700px;
+}
+.hero-image-box {
+  background-color: var(--soft-green);
+  border: 2px solid var(--deep-green);
+  border-radius: 20px;
+  padding: 30px;
+}
+.hero-image-box img {
+  width: 100%;
+  max-height: 360px;
+  object-fit: contain;
+}
+
+.btn-primary-custom {
+  background-color: var(--deep-green);
+  border: 2px solid var(--deep-green);
+  color: var(--warm-cream);
+  font-weight: 700;
+  padding: 0.85rem 1.4rem;
+  border-radius: 8px;
+}
+.btn-primary-custom:hover {
+  background-color: var(--cedar);
+  border-color: var(--cedar);
+  color: var(--warm-cream);
+}
+.btn-outline-custom {
+  background-color: var(--warm-cream);
+  border: 2px solid var(--deep-green);
+  color: var(--deep-green);
+  font-weight: 700;
+  padding: 0.85rem 1.4rem;
+  border-radius: 8px;
+}
+.btn-outline-custom:hover {
+  background-color: var(--deep-green);
+  color: var(--warm-cream);
+}
+.services-section {
+  background-color: var(--warm-cream);
+  padding: 80px 0;
+}
+.section-title {
+  color: var(--deep-green);
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+.service-card {
+  background-color: var(--deep-green);
+  border: 2px solid var(--deep-green);
+  border-radius: 18px;
+  overflow: hidden;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--cedar);
+  box-shadow: 0 10px 25px rgba(32, 60, 53, 0.12);
+}
+.service-image {
+  background-color: var(--warm-cream);
+  border-bottom: 2px solid var(--deep-green);
+  height: 155px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.service-image img {
+  max-height: 125px;
+  max-width: 80%;
+}
+.repair-bg {
+  background-color: var(--soft-green);
+}
+.refresh-bg {
+  background-color: var(--soft-green);
+}
+.outdoor-bg {
+  background-color: var(--soft-green);
+}
+.card-label {
+  color: var(--cedar);
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+.card-title {
+  color: var(--deep-green);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.card-text {
+  margin-bottom: 1.5rem;
+  color: var(--muted-text);
+}
+.service-link {
+  color: var(--deep-green);
+  font-weight: 700;
+  text-decoration: none;
+}
+.service-link:hover {
+  color: var(--cedar);
+}
+
+.process-section {
+  background-color: var(--soft-green);
+  padding: 70px 0;
+}
+.process-section p {
+  color: var(--muted-text);
+}
+.process-step {
+  height: 100%;
+}
+.step-number {
+  width: 68px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--deep-green);
+  color: var(--warm-cream);
+  border: 2px solid var(--cedar);
+  border-radius: 50%;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.process-step h3 {
+  color: var(--deep-green);
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+.process-step p {
+  color: var(--muted-text);
+  font-size: 0.95rem;
+}
+
+.about-section {
+  background-color: var(--warm-cream);
+  padding: 80px 0;
+}
+.about-section p {
+  color: var(--muted-text);
+}
+.about-image-box {
+  background-color: var(--soft-green);
+  border: 2px solid var(--deep-green);
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+}
+.about-image-box img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+}
+.about-list {
+  padding-left: 1.2rem;
+  margin-top: 1.5rem;
+}
+.about-list li {
+  margin-bottom: 0.7rem;
+  font-weight: 600;
+  color: var(--deep-green);
+}
+
+.contact-section {
+  background-color: var(--soft-green);
+  padding: 80px 0;
+}
+.contact-section p {
+  color: var(--muted-text);
+}
+.contact-card {
+  background-color: var(--warm-cream);
+  border: 2px solid var(--deep-green);
+  border-radius: 18px;
+  padding: 30px;
+}
+.contact-card p:first-child {
+  color: var(--deep-green);
+}
+.contact-card a:not(.btn) {
+  color: var(--deep-green);
+  font-weight: 600;
+}
+.contact-card a:not(.btn):hover {
+  color: var(--cedar);
+}
+
+.site-footer {
+  background-color: var(--deep-green);
+  color: var(--warm-cream);
+  padding: 30px 0;
+}
+.site-footer p {
+  color: var(--warm-cream);
+}
+
+@media (max-width: 991.98px) {
+  .site-navbar {
+    padding: 0.75rem 0;
+  }
+  .navbar-nav {
+    padding-top: 1rem;
+  }
+  .navbar-nav .nav-link {
+    margin-left: 0;
+    padding: 0.6rem 0;
+  }
+  .navbar-nav .btn-contact {
+    display: inline-block;
+  }
+  .hero-section {
+    padding: 60px 0;
+  }
+  .services-section,
+  .about-section,
+  .contact-section {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-section {
+    padding: 45px 0;
+  }
+  .hero-title {
+    font-size: 2.25rem;
+  }
+  .hero-text {
+    font-size: 1rem;
+  }
+  .hero-image-box {
+    padding: 20px;
+    border-radius: 15px;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .service-image {
+    height: 140px;
+  }
+  .process-section {
+    padding: 50px 0;
+  }
+  .step-number {
+    width: 55px;
+    height: 55px;
+  }
+  .about-image-box {
+    padding: 20px;
+  }
+  .contact-card {
+    padding: 25px;
+  }
+}
