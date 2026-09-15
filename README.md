@@ -134,7 +134,7 @@ Keeping Bootstrap’s navbar solution is the better professional choice because 
 
 ## Live Site
 
-[Add your published GitHub Pages URL here.]
+(https://paris-clouds.github.io/week05-bootstrap/)
 
 ## Final Reminder
 
